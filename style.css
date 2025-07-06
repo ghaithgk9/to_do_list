@@ -1,0 +1,90 @@
+   * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .todo-container {
+      background: #fff;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .todo-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .input-section {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .input-section input {
+      flex: 1;
+      padding: 10px 15px;
+      border: 2px solid #66a6ff;
+      border-radius: 6px 0 0 6px;
+      outline: none;
+      font-size: 1rem;
+    }
+    .input-section button {
+      background: #66a6ff;
+      color: #fff;
+      border: none;
+      padding: 0 20px;
+      font-size: 1rem;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .input-section button:hover {
+      background: #4b8eea;
+    }
+    ul {
+      list-style: none;
+    }
+    ul li {
+      background: #f3f3f3;
+      padding: 12px 15px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      transition: background 0.3s ease;
+    }
+    
+    .task {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .task input[type="checkbox"] {
+      transform: scale(1.2);
+      accent-color: #66a6ff;
+      cursor: pointer;
+    }
+    .delete-btn {
+      background-color:#e60000;
+      border: none;
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      width: 65px;
+      border-radius: 5px;
+      height: 30px;
+    }
+    .delete-btn:hover {
+      background-color:#ff0202ac;
+    }
